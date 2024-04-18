@@ -1,0 +1,22 @@
+:root{
+    /* nomedavariável: valor */
+    --cor-de-fundo: #1e1e1e;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A3753;
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
+}
+*{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+}
+span{
+ color: var(--branco);
+}
+.cconteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
