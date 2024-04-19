@@ -19,4 +19,32 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+.cconteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+.titulo-principal{
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+}
+.botao{
+    background-color: var(--botao-inativo);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: lem;
+    font-size: 18px;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
 }
