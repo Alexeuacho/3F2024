@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root{
     --cor-de-fundo: #1e1e1e;
     --verde: #6fff57;
@@ -6,7 +8,10 @@
     --botao-inativo: rgba(58,55,94,0.5);
     --texto-fundo: rgba(58,55,94,0.3);
 }
-
+ body{
+    background-color: var(--cor-de-fundo);
+    font-family: 'chakra phet' sans-serif;
+ }
 *{
     background-color: var(--cor-de-fundo);
     color: var(--branco);
@@ -22,6 +27,7 @@ span{
        align-items: center;
        width: 100%;
        max-width: 1200px;
+       margin: 0 auto;
    }
    .titulo-princpal{
        text-align: center;
@@ -40,6 +46,7 @@ span{
        border-bottom: 4px solid var(--botao-ativo);
        border-left: 2px solid var(--botao-ativo);
        border-right: 2px solid var(--botao-ativo);
+       font-family: 'chakara pet' sans-serif;
    }
    .ativo{
     background-color: var(--botao-ativo);
@@ -64,7 +71,11 @@ span{
     display: none;
 }
 .aba-conteudo.ativo{
-  display: flex;
+  display: block;
+}
+.abas-textos{
+    background-color: var(--botao-inativo);
+    padding: 40px;
 }
    @media screen and (min-width: 700px){
        .botoes{
