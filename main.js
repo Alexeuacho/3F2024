@@ -1,7 +1,6 @@
 const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".aba-conteudo");
 const contador = document.querySelectorAll(".contador");
-contador[0].textContent = "Olá"
 const tempoObjetivo1 = new Date(2024,11,31,23,59)
 const tempoObjetivo2 = new Date(2025,11,31,23,59)
 const tempoObjetivo3 = new Date(2025,10,31,23,59)
@@ -27,14 +26,14 @@ function calculaTempo(tempoObjetivo){
     horas = horas%24
     return [dias,horas,minutos,segundos]
 }
-let contadorPrimeiro = calculaTempo(tempoObjetivo1)
-contador[0].textContent = `Faltam ${contadorPrimeiro[0]} dias, ${contadorPrimeiro[1]} horas, ${contadorPrimeiro[2]} minutos e ${contadorPrimeiro[3]} segundos`
-let contadorSegundo = calculaTempo(tempoObjetivo2)
-contador[1].textContent = `Faltam ${contadorSegundo[0]} dias, ${contadorSegundo[1]} horas e ${contadorSegundo[2]} minutos e ${contadorSegundo[3]} segundos`
-let contadorTerceiro = calculaTempo(tempoObjetivo2)
-contador[2].textContent = `Faltam ${contadorTerceiro[0]} dias, ${contadorTerceiro[1]} horas e ${contadorTerceiro[2]} minutos e ${contadorTerceiro[3]} segundos`
-let contadorQuarto = calculaTempo(tempoObjetivo2)
-contador[3].textContent = `Faltam ${contadorQuarto[0]} dias, ${contadorQuarto[1]} horas e ${contadorQuarto[2]} minutos e ${contadorQuarto[3]} segundos`
+// let contadorPrimeiro = calculaTempo(tempoObjetivo1)
+// contador[0].textContent = `Faltam ${contadorPrimeiro[0]} dias, ${contadorPrimeiro[1]} horas, ${contadorPrimeiro[2]} minutos e ${contadorPrimeiro[3]} segundos`
+// let contadorSegundo = calculaTempo(tempoObjetivo2)
+// contador[1].textContent = `Faltam ${contadorSegundo[0]} dias, ${contadorSegundo[1]} horas e ${contadorSegundo[2]} minutos e ${contadorSegundo[3]} segundos`
+// let contadorTerceiro = calculaTempo(tempoObjetivo2)
+// contador[2].textContent = `Faltam ${contadorTerceiro[0]} dias, ${contadorTerceiro[1]} horas e ${contadorTerceiro[2]} minutos e ${contadorTerceiro[3]} segundos`
+// let contadorQuarto = calculaTempo(tempoObjetivo2)
+// contador[3].textContent = `Faltam ${contadorQuarto[0]} dias, ${contadorQuarto[1]} horas e ${contadorQuarto[2]} minutos e ${contadorQuarto[3]} segundos`
 
 for (let i = 0 ; i < botoes.length ; i++){
     botoes[i].onclick = function (){

@@ -34,6 +34,15 @@ span{
        display: flex;
        justify-content: center;
    }
+   .contador-digito-numero{
+       font-size: 88px;
+       margin: 0;
+   }
+   .contador-digito-texto{
+       color: var(--verde);
+       font-size: 20px ;
+       margin: 0 ;
+    }
    .titulo-princpal{
        text-align: center;
        width: 100%;
@@ -98,4 +107,3 @@ span{
            border-radius: 20px 0 0 20px;
        }
    }
-   
